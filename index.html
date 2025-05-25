@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<body id="topo">
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnologia no Campo e na Cidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #000;
+      font-size: 16px;
+    }
+    header {
+      background: #2e7d32;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #388e3c;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:focus, nav a:hover {
+      outline: 2px solid yellow;
+      background-color: #2e7d32;
+    }
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #fff;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .acessibilidade {
+      text-align: right;
+      padding: 10px;
+      background: #e0e0e0;
+    }
+    .acessibilidade button {
+      font-size: 14px;
+      padding: 6px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!-- VLibras Plugin -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<!-- Botões de acessibilidade -->
+<div class="acessibilidade" aria-label="Controles de acessibilidade">
+  <span>Acessibilidade:</span>
+  <button onclick="aumentarFonte()" aria-label="Aumentar fonte">A+</button>
+  <button onclick="diminuirFonte()" aria-label="Diminuir fonte">A-</button>
+</div>
+
+<header role="banner">
+  <h1>Tecnologia no Campo e na Cidade</h1>
+  <p>Conectando o agronegócio à vida urbana</p>
+</header>
+
+<nav role="navigation" aria-label="Menu principal">
+  <a href="#producao">Produção Agrícola</a>
+  <a href="#tecnologia">Inovações Tecnológicas</a>
+  <a href="#conexao">Conexão com Cidade</a>
+</nav>
+
+<main role="main">
+  <section id="producao">
+    <h2>Produção Agrícola Moderna</h2>
+    <p>A produção agrícola moderna vem passando por uma verdadeira revolução, impulsionada pelo uso crescente da tecnologia no campo,o que antes dependia exclusivamente da força de trabalho humana e das condições climáticas, hoje é guiado por dados, sensores e decisões inteligentes baseadas em informação em tempo real.
+ </p>Drones, por exemplo, são utilizados para monitorar grandes áreas de plantio, identificando falhas na lavoura, áreas com pragas ou regiões que precisam de irrigação. Essa visão aérea detalhada permite ao agricultor agir com rapidez e precisão, economizando recursos e aumentando a produtividade.
+</p>Além disso, sensores instalados no solo medem a umidade, a temperatura e a composição do terreno, enviando esses dados automaticamente para sistemas digitais. Com essas informações, é possível otimizar o uso da água, dos fertilizantes e até prever o melhor momento para a colheita.</p>
+    <img src="e1cafaa2-d284-490f-a41b-4526dff5c51a.jfif" alt="Drone agrícola sobrevoando a lavoura">
+  </section>
+
+  <section id="tecnologia">
+    <h2>Inovações Tecnológicas no Campo</h2>
+    <p>As inovações tecnológicas no campo estão transformando profundamente a forma como a agricultura é planejada, executada e gerenciada. A chamada agricultura 4.0 representa a integração de diversas tecnologias avançadas — como inteligência artificial e automação para tornar a produção rural mais eficiente, sustentável e inteligente.
+</p>Com o uso de sensores conectados à internet, é possível monitorar o clima, a umidade do solo, o crescimento das plantas e até a movimentação de animais em tempo real. Essas informações são processadas por sistemas inteligentes que auxiliam na tomada de decisão com base em dados precisos, reduzindo incertezas e desperdícios.
+
+Softwares agrícolas modernos permitem o planejamento detalhado de cada etapa da safra, desde o preparo do solo até a colheita e a distribuição dos produtos. 
+</p>
+    <img src="ece208cb-18f9-42e6-9f85-77f3ba6bbc5a.jfif" alt="Painel digital mostrando dados da lavoura">
+  </section>
+
+  <section id="conexao">
+    <h2>Conexão com a Cidade</h2>
+    <p>A tecnologia não apenas revoluciona o campo, como também fortalece os laços entre a produção rural e a vida urbana. Essa conexão é essencial para garantir um sistema alimentar mais justo, sustentável e transparente, aproximando quem produz de quem consome.
+
+Hoje, ferramentas digitais permitem que os consumidores nas cidades acompanhem a origem dos alimentos que chegam à sua mesa. Por meio de códigos QR nas embalagens, é possível acessar informações sobre a fazenda de onde veio o produto, seu método de cultivo, tempo de transporte e até certificações ambientais. Isso promove a valorização do trabalho agrícola e aumenta a confiança nas relações de consumo.</p>
+
+<p>Obrigado por visitar! Juntos, construímos um futuro mais sustentável.</p>
+    
+  </section>
+</main>
+
+
+<footer role="contentinfo">
+  <p>&copy; 2025 Tecnologia no Campo. Todos os direitos reservados.</p>
+  <p><a href="#topo">Voltar ao topo</a></p>
+</footer>
+
+<!-- Scripts de acessibilidade -->
+<script>
+  function aumentarFonte() {
+    let body = document.querySelector("body");
+    let style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+    let currentSize = parseFloat(style);
+    body.style.fontSize = (currentSize + 2) + 'px';
+  }
+
+  function diminuirFonte() {
+    let body = document.querySelector("body");
+    let style = window.getComputedStyle(body, null).getPropertyValue('font-size');
+    let currentSize = parseFloat(style);
+    if (currentSize > 12) {
+      body.style.fontSize = (currentSize - 2) + 'px';
+    }
+  }
+</script>
+
+</body>
+</html>
